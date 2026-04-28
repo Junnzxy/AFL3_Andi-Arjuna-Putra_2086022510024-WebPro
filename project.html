@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project - Portofolio Andi Arjuna Putra Bima Akbar Oddang</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-code"></i> MyPortofolio
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="project.html">Project</a></li>
+                    <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <div class="container">
+            <h1 class="text-center mb-5">Project Saya</h1>
+            
+            <div class="row">
+                <!-- PROJECT 1: Line Follower Robot -->
+                <div class="col-md-4 mb-4">
+                    <div class="card project-card h-100">
+                        <img src="img/line_follower.jpg" class="card-img-top" alt="Line Follower Robot">
+                        <div class="card-body">
+                            <span class="badge bg-danger mb-2">Robotics</span>
+                            <h5 class="card-title">Line Follower Robot</h5>
+                            <p class="card-text">Robot otonom yang dapat mengikuti garis hitam di atas permukaan putih menggunakan sensor infrared. Dilengkapi dengan motor driver L298N dan Arduino Uno.</p>
+                            <p><strong>Teknologi:</strong> Arduino, C++, Sensor IR, Motor DC</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#robotModal">
+                                Lihat Detail
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- PROJECT 2: Drone FPV Racing -->
+                <div class="col-md-4 mb-4">
+                    <div class="card project-card h-100">
+                        <img src="img/fpv_drone.jpg" class="card-img-top" alt="Drone FPV Racing">
+                        <div class="card-body">
+                            <span class="badge bg-warning text-dark mb-2">Drone Racing</span>
+                            <h5 class="card-title">Drone FPV Racing</h5>
+                            <p class="card-text">Drone balap FPV yang saya rakit sendiri dengan frame carbon fiber. Mampu melaju hingga 120km/jam dengan sistem video analog real-time ke goggles.</p>
+                            <p><strong>Spesifikasi:</strong> Frame 5 inci, Motor Brushless 2306, Flight Controller Betaflight F4, VTX 5.8GHz 800mW</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#droneModal">
+                                Lihat Detail
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- PROJECT 3: Logo Design Portfolio -->
+                <div class="col-md-4 mb-4">
+                    <div class="card project-card h-100">
+                        <img src="img/logo_funclub.png" class="card-img-top" alt="Logo Design Portfolio">
+                        <div class="card-body">
+                            <span class="badge bg-dark mb-2">Graphic Design</span>
+                            <h5 class="card-title">Logo Design Portfolio</h5>
+                            <p class="card-text">Kumpulan desain logo untuk berbagai keperluan: personal brand, komunitas, dan brand fiktif. Setiap logo memiliki konsep dan filosofi tersendiri.</p>
+                            <p><strong>Tools:</strong> Adobe Illustrator / Canva</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#logoModal">
+                                Lihat Detail
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+    <!-- MODAL PROJECT 1: Robot -->
+    <div class="modal fade" id="robotModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Line Follower Robot</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/line_follower.jpg" class="img-fluid mb-3" alt="Robot Detail">
+                    <h6>Spesifikasi:</h6>
+                    <ul>
+                        <li>Mikrokontroler: Arduino Uno</li>
+                        <li>Sensor: 2x TCRT5000 (Infrared)</li>
+                        <li>Motor Driver: L298N</li>
+                        <li>Power: Baterai Li-Po 7.4V</li>
+                    </ul>
+                    <p>Robot ini berhasil memenangkan Lomba Line Follower tingkat fakultas tahun 2024.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- MODAL PROJECT 2: Drone FPV -->
+<div class="modal fade" id="droneModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Drone FPV Racing</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <img src="img/fpv_drone.jpg" class="img-fluid mb-3" alt="Drone FPV">
+                <h6>Spesifikasi Lengkap:</h6>
+                <ul>
+                    <li>Frame: TBS Source One V3 (Carbon fiber)</li>
+                    <li>Motor: 2306 2450KV Brushless</li>
+                    <li>Flight Controller: SpeedyBee F405 V3</li>
+                    <li>ESC: 4in1 50A BLHeli_32</li>
+                    <li>Receiver: ExpressLRS 2.4GHz</li>
+                    <li>Kamera: Caddx Ratel 2</li>
+                    <li>VTX: Rush Tank Solo 800mW</li>
+                </ul>
+                <p>Drone ini saya gunakan untuk mengikuti lomba drone racing tingkat daerah.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- MODAL PROJECT 3: Logo Design -->
+<div class="modal fade" id="logoModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Logo Design Portfolio</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <img src="img/logo_funclub.png" class="img-fluid mb-3" alt="Logo Design">
+                
+                <h6>Logo 1: Incubator</h6>
+                <p>Logo untuk funclub Server di jurusan. Komunitas yang fokus pada manajemen server, jaringan, backend development, dan infrastruktur IT. Desain menggunakan elemen server rack / cloud yang melambangkan pusat data. Warna biru tegas mencerminkan keandalan, keamanan, dan stabilitas.</p>
+                
+                <hr>
+                
+                <h6>Logo 2: UKM Robotika Kampus</h6>
+                <p>Logo untuk funclub Competitive Programming. Wadah bagi mahasiswa yang suka tantangan algoritma, struktur data, dan lomba programming. Desain dengan elemen kurung kurawal { } dan ikon kode, dipadukan dengan warna dinamis. Melambangkan kecepatan berpikir dan ketepatan solusi.</p>
+                
+                <hr>
+                
+                <h6>Logo 3: GameDev</h6>
+                <p>Logo untuk funclub Game Development di jurusan. Menampilkan semangat dunia game dengan desain yang playful dan enerjik. Menggunakan kombinasi warna biru dan oranye. Elemen joystick/pad kontrol dan huruf bergaya pixel art mencerminkan industri game development</p>
+                
+                <h6>Proses Pembuatan:</h6>
+                <ul>
+                    <li>✏️ Sketsa tangan (brainstorming ide)</li>
+                    <li>🎨 Digitalisasi di Illustrator/Canva</li>
+                    <li>🎯 Pemilihan warna & tipografi</li>
+                    <li>📱 Mockup logo</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- FOOTER -->
+    <footer class="text-center">
+        <div class="container">
+            <p>&copy; 2025 Andi Arjuna Putra Bima Akbar Oddang - NIM: 2086022510024 | Portofolio Website</p>
+            <p>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

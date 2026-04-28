@@ -1,0 +1,148 @@
+/* css/style.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Konten utama */
+main {
+    flex: 1;
+    padding: 40px 0;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 80px 0;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid white;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Gallery Hover Effect */
+.gallery-card {
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.gallery-card:hover {
+    transform: scale(1.05);
+}
+
+.gallery-card img {
+    transition: transform 0.3s ease;
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+}
+
+/* Card Project */
+.project-card {
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.project-card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Skills Progress Bar */
+.skill-item {
+    margin-bottom: 25px;
+}
+
+.skill-item h5 {
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.progress {
+    height: 25px;
+    border-radius: 10px;
+}
+
+.progress-bar {
+    border-radius: 10px;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 20px 0;
+    margin-top: auto;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    color: #ddd;
+}
+
+/* About Section */
+.about-img {
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Contact Form */
+.contact-form {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero {
+        padding: 50px 0;
+    }
+    
+    .profile-img {
+        width: 150px;
+        height: 150px;
+    }
+    
+    main {
+        padding: 20px 0;
+    }
+}
+
+/* Navbar active */
+.navbar-nav .nav-link.active {
+    font-weight: bold;
+    color: #ffc107 !important;
+}
