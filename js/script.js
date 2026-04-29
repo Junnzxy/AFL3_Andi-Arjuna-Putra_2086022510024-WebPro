@@ -86,7 +86,7 @@ function showModal(imageSrc, title) {
 // ========== SET ACTIVE NAVIGATION ==========
 function setActiveNav() {
     let currentPage = window.location.pathname.split('/').pop();
-    if (currentPage === '' || currentPage === 'index.html') {
+    if (currentPage === '' || currentPage ===  'index.html') {
         currentPage = 'index.html';
     }
     
